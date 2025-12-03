@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #333;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.white{
+    height: 200px;
+    width: 30px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.black{
+    position: absolute;
+    background-color: #111;
+    height: 70%;
+    width: 30px;
+    left: 40%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.white:active{
+    scale: 0.95;
+}
