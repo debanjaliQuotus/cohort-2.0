@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+}
+
+@keyframes changeBgColor {
+  from {
+    background-color: white;
+    border-radius: 0px;
+    scale: 1;
+  }
+  to {
+    background-color: red;
+    border-radius: 50px;
+    scale: 0.5;
+  }
+}
+
+.box {
+  height: 200px;
+  width: 400px;
+  /* background: conic-gradient(white, black, red, yellow); */
+  animation: changeBgColor 5s infinite alternate;
+  /* box-shadow:inset 20px 20px 20px rgb(6, 232, 59); */
+}
+/* h1 {
+  font-family: monospace;
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  text-shadow: 5px 5px 1px rgb(7, 185, 7);
+} */
