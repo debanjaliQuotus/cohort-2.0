@@ -14,14 +14,20 @@ body {
   background: #000000;
 }
 
+/* Property Declaration */
+@property --bgColor{
+  syntax: '<color>';
+  initial-value: rgba(255, 255, 255, 0.237);
+  inherits: false;
+}
+
 @keyframes changeBgColor {
   from {
-    background-color: white;
+    background-color: var(--bgColor);
     border-radius: 0px;
     scale: 1;
   }
   to {
-    background-color: red;
     border-radius: 50px;
     scale: 0.5;
   }
@@ -32,12 +38,13 @@ body {
   width: 400px;
   /* background: conic-gradient(white, black, red, yellow); */
   animation: changeBgColor 5s infinite alternate;
-  /* box-shadow:inset 20px 20px 20px rgb(6, 232, 59); */
+  box-shadow: inset 20px 20px 20px rgb(6, 232, 59);
 }
-/* h1 {
+h1 {
   font-family: monospace;
   font-size: 3rem;
   text-align: center;
   color: white;
   text-shadow: 5px 5px 1px rgb(7, 185, 7);
-} */
+  padding-top: 20px;
+}
