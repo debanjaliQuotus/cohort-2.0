@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: whitesmoke;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  /* anchor-name: --some-anchor; */
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+  transition: all 0.3s linear;
+}
+
+/* .box:hover {
+  anchor-name: --some-anchor;
+} */
+
+body:has(.box:hover) .box {
+  transform: scale(0.8);
+  opacity: 0.8;
+}
+
+body .box:hover {
+  transform: scale(1.2) !important;
+  opacity: 1 !important;
+  cursor: pointer;
+}
+
+.red {
+  background-color: rgb(171, 90, 90);
+}
+
+.blue {
+  background-color: rgb(68, 68, 217);
+}
+
+.green {
+  background-color: rgb(66, 210, 66);
+}
+
+/* .anchor {
+  background-color: #faf6f6d0;
+  border-radius: 10px;
+  position: absolute;
+  top: anchor(top);
+  left: anchor(left);
+  bottom: anchor(bottom);
+  right: anchor(right);
+  pointer-events: none;
+  position-anchor: --some-anchor;
+  transition: all 0.3s linear;
+  mix-blend-mode: exclusion;
+} */

@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes textAnimation {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 0.9;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+main h1 {
+
+  max-width: 70vw;
+  font-size: 8rem;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0 0 0px #01afee;
+  transition: all ease 0.3s;
+  text-align: center;
+  animation: textAnimation 4s infinite alternate;
+}
+
+main:hover h1 span {
+  text-shadow: 0 0 30px #01afee;
+}
